@@ -1,9 +1,10 @@
 version: 0.2
+env:
+  secrets-manager:
+    DOCKER_HUB_USER: arn:aws:secretsmanager:ap-northeast-1:630481373697:secret:DockerHubCredential-f2dYUM:DOCKER_HUB_USER
+    DOCKER_HUB_PASSWORD: arn:aws:secretsmanager:ap-northeast-1:630481373697:secret:DockerHubCredential-f2dYUM:DOCKER_HUB_PASSWORD
+
 phases:
-  env:
-    secrets-manager:
-      DOCKER_HUB_USER: arn:aws:secretsmanager:ap-northeast-1:630481373697:secret:DockerHubCredential-f2dYUM:DOCKER_HUB_USER
-      DOCKER_HUB_PASSWORD: arn:aws:secretsmanager:ap-northeast-1:630481373697:secret:DockerHubCredential-f2dYUM:DOCKER_HUB_PASSWORD
   install:
     runtime-versions:
       java: corretto21
