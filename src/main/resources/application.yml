@@ -4,3 +4,5 @@ spring:
   jackson:
     visibility:
       field: ANY
+    deserialization:
+      fail-on-unknown-properties: false
