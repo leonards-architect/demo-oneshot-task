@@ -9,10 +9,9 @@ import lombok.ToString;
 @NoArgsConstructor
 public class Event {
     String message;
-    int retryCount;
     boolean failure;
 
-    public boolean isFailure() {
+    public boolean failure() {
         return failure;
     }
 }
