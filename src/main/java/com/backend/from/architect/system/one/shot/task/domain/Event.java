@@ -1,14 +1,9 @@
 package com.backend.from.architect.system.one.shot.task.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
-@Data
 @ToString
-@AllArgsConstructor
-@NoArgsConstructor
+@Getter
 public class Event {
     String message;
     boolean failure;

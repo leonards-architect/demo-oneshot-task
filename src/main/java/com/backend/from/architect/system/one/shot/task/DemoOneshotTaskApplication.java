@@ -27,9 +27,9 @@ public class DemoOneshotTaskApplication implements ApplicationRunner {
 			if (event.isFailure()) {
 				throw new RuntimeException("Failed to run task." + event);
 			}
+			log.info("succeed! " + event);
 		} catch (JsonMappingException e) {
 			throw new RuntimeException("Failed to run task." + eventSource, e);
 		}
-		log.info("succeed!");
 	}
 }
